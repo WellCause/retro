@@ -1,0 +1,24 @@
+{
+  "name": "retro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:less": "less-watch-compiler resources/less resources/css/ main.less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViperART/retro.git"
+  },
+  "author": "ViperART",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViperART/retro/issues"
+  },
+  "homepage": "https://github.com/ViperART/retro#readme",
+  "devDependencies": {
+    "less": "^3.10.3",
+    "less-watch-compiler": "^1.13.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,66 @@
+.header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: @grid-desktop;
+    position: absolute;
+    padding: 2.5rem 0;
+
+    &__container {
+        grid-column: center-start / center-end;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        position: relative;
+
+        & > * {
+            margin-right: 4rem;
+        }
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 3rem;
+            position: absolute;
+            background-color: @color-pink;
+            right: 2rem;
+            top: -.5rem;
+        }
+    }
+
+    &__link:visited, 
+    &__link:link {
+        color: @color-white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: color @transition-basic;
+
+        &:hover,
+        &:focus {
+            color: @color-pink;
+            outline: none;
+        }
+    }
+
+    &__icon {
+        fill: @color-pink;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2rem;
+        cursor: pointer;
+        transition: transform @transition-basic;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

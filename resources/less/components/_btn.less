@@ -1,0 +1,24 @@
+.btn {
+    color: @color-white;
+    background-color: @color-pink;
+    border: none;
+    padding: .7rem 3.5rem .9rem 3.5rem;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-2px);
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(0px);
+    }
+
+    &--big {
+        padding: 1.4rem 4rem 1.6rem 4rem;
+    }
+}

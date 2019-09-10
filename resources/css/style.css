@@ -211,3 +211,49 @@ html {
 .clients__logo:not(:last-child) {
   margin-right: 5rem;
 }
+.works {
+  padding: 12rem 0;
+}
+.works__examples {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+  grid-gap: 4.5rem;
+}
+.works__example {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 25rem;
+}
+.works__caption {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #ff3150;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.works__caption:hover {
+  opacity: 1;
+}
+.works__img {
+  max-height: 25rem;
+}
+.works__name {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.works__category {
+  font-size: 1.2rem;
+}

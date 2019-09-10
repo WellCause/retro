@@ -194,3 +194,20 @@ html {
   text-align: center;
   line-height: 1.6;
 }
+.clients {
+  background-image: linear-gradient(rgba(15, 15, 20, 0.9), rgba(15, 15, 20, 0.9)), url(../img/clients_bg.jpg);
+  padding: 12rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.clients__logos {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients__logo:not(:last-child) {
+  margin-right: 5rem;
+}

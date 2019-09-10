@@ -1,0 +1,19 @@
+.clients {
+    background-image: linear-gradient(rgba(@color-darkblue, .9), rgba(@color-darkblue, .9)), url(../img/clients_bg.jpg),;
+    padding: 12rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__logos {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo:not(:last-child) {
+        margin-right: 5rem;
+    }
+}

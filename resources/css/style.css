@@ -38,6 +38,35 @@ html {
 .btn--big {
   padding: 1.4rem 4rem 1.6rem 4rem;
 }
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.headline__heading {
+  color: #231f20;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+.headline__heading--white {
+  color: #fff;
+}
+.headline__text {
+  color: #ff3150;
+  text-transform: uppercase;
+  font-size: 1.45rem;
+}
+.headline::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 4rem;
+  background-color: #ff3150;
+  bottom: -2.5rem;
+}
 .header {
   width: 100%;
   display: grid;
@@ -100,7 +129,7 @@ html {
 .hero {
   background-image: url("../img/hero_bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 100vh;
   align-content: center;
   justify-items: center;
@@ -110,6 +139,16 @@ html {
   font-size: 2.5rem;
   text-align: center;
   margin: 1rem 0 8rem 0;
+}
+.history {
+  padding: 12rem 0 0 0;
+  justify-items: center;
+}
+.history__text {
+  margin-top: 6.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
 .features__container {
   display: grid;

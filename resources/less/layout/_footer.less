@@ -1,0 +1,122 @@
+.footer {
+    background-color: @color-darkblue-1;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: @grid-desktop;
+    font-size: 1.2rem;
+    color: rgba(@color-white, .6);
+    
+    &__container {
+        grid-column: center-start / center-end;
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr 3fr;
+    }
+
+    &__caption {
+        color: rgba(@color-white, .8);
+        font-size: 1.5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: @color-pink;
+        transition: color .2s;
+
+        &:hover,
+        &:focus {
+            color: @color-white;
+            outline: none;
+        }
+    }
+
+    &__rights,
+    &__copy {
+        margin: 1rem 0;
+        line-height: 2;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__nav-link:link,
+    &__nav-link:visited {
+        text-decoration: none;
+        color: rgba(@color-white, .6);
+        display: inline-block;
+        margin-top: 1rem;
+        transition: color .2s;
+
+        &:hover,
+        &:focus {
+            color: @color-white;
+            outline: none;
+        }
+    }
+
+    &__text {
+        line-height: 2;
+        margin: .4rem 0;
+    }
+
+    &__btn:link,
+    &__btn:visited {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @color-pink;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        color: @color-white;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        transition: all .2s;
+
+        & span {
+            font-size: 4rem;
+        }
+
+        &:hover,
+        &:focus {
+            outline: none;
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(0);
+        }
+    }
+
+    &__icon-arrow {
+        height: 3rem;
+        width: 3rem;
+        fill: @color-white;
+    }
+
+    &__socials {
+        display: grid;
+        grid-template-columns: repeat(4, 2rem);
+        grid-gap: 2rem;
+    }
+
+    &__social:link,
+    &__social:visited {
+        text-decoration: none;
+
+        
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: rgba(@color-white, .6);
+        transition: all .2s; 
+
+        &:hover,
+        &:focus {
+            fill: rgba(@color-white, .8);
+            outline: none;
+        }
+    }
+}

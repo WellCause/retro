@@ -1,0 +1,27 @@
+.blog {
+    padding: 12rem 0 15rem 0;
+
+    &__posts {
+        margin: 8rem 0 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 5rem;
+    }
+
+    &__post {
+        overflow: hidden;
+    }
+
+    &__date {
+        color: @color-lightblue;
+    }
+
+    &__img {
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .btn {
+        justify-self: center;
+    }
+}
